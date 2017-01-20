@@ -68,7 +68,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'django.template.context_processors.media'
+                #'django.template.context_processors.media'
             ],
         },
     },
@@ -130,6 +130,8 @@ MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
 
 
-print(__file__)
-print(os.path.dirname(__file__))
-print(os.path.dirname(os.path.dirname(__file__)))
+print("BASE_DIR : ", BASE_DIR)
+print("TEMPLATE_DIR : ", TEMPLATE_DIR)
+print("STATIC_DIR : ", STATIC_DIR)
+print("MEDIA_DIR : ", MEDIA_DIR)
+print("MEDIA_ROOT : ", MEDIA_ROOT)
